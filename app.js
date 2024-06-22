@@ -20,7 +20,7 @@ app.get('/movies', (req, res) => {
 
 app.get('/movie/:id', (req, res) => {
     const id = req.params.id
-    res.send(`reading movie: ${id}`)
+    res.render(`detail`)
 })
 
 app.listen(port, () => {
